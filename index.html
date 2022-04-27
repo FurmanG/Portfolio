@@ -1,125 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--Head--------------------->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gil Furman</title>
+    <link rel="shortcut icon" type="img/jpg" href="Images/Favicon-128px.png">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+  </head>
+<!--End of Head--------------->
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Gil Furman</title>
-        <link rel="stylesheet" type="text/css" href="./stylesheet/portfolio.css">
-    </head>
+<!--Body----------------------->
+  <body class="Background">
 
-    <body class="Background">
-
-<!--====================================-->       
-<!-- NAVBAR (Line 99 to 153 on the CSS)-->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Contact</a>
-        </div>
-        <br><br>
-<!--  End of NAVBAR -->
-<!--====================================-->  
-
-
-
-<!--     Video and text under the navigation bar -->
-        <div id="Home">
-            <video autoplay muted loop id="Typing_Video"> <!-- Lines 155 to 168 on the CSS-->
-                <source src="images/video/Typing.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
-     
-        <div class="Video_Text"> <!-- Lines 170 to 179 on the CSS-->
-            <h1 class="white-text">Gil's Portfolio</h1> <!-- Lines 23 to 26 on the CSS-->
-            <strong>
-                <p class="center"> <!-- Lines 45 to 52 on the CSS-->
-                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
-                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
-                        <br>field of battle and to command such unswervingly dutiful actors or troops.
-                    </q>
-                    <br> -Joseph Weizenbaum
-                    <br>
-                    <br> My name is Gil Furman. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                    <br>
-                    <br> Thank you for stopping by and enjoy! 
-                </p>
-            </strong>
-        </div>
-<!--  End of Video block -->
-
-
-
-<!--About section-->
-<div class="Row" id="About">
-    <div class="Column_2"><!--Left column-->
-        <img src="images/html_custom.jpg" alt="Replace with your own image and description">
-        <!--<div class="centered">This image is temporary<br> until I find a good one.</div>-->
+    <!--Navbar----------------->
+    <div class="Navbar">
+      <a class="active" href="#Home">Home</a>
+      <a href="#Slideshow">Slideshow</a>
+      <a href="#About">About</a>
+      <a href="#GitHub">GitHub</a>
+      <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
     </div>
-    <div class="Column_1"><!--Right column-->
-        <h1>About</h1>
-        <p>
-            I am a software developer who loves to code! 
-            <br>
-            <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
-            <br>
-            <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+    <!--End of Navbar----------------->
+    
+    <!-- Background video-------------->
+    <div id="Home">
+      <video autoplay muted loop id="Typing_Video">
+        <source src="Images/video/Typing.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <!-- Background video-------------->
+
+    <!--Video text--------------------->
+    <div class="Video_Text">
+      <h1 class="white-text">Gil Furmn</h1>
+      <strong>
+        <p class="center quote">
+          <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+            <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+            <br>field of battle and to command such unswervingly dutiful actors or troops.
+        </q>
+        <br> -Joseph Weizenbaum<br>
+        <br>
+        My name is Gil Furman. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+        <br>
+        <br>Thank you for stopping by and enjoy! 
         </p>
+      </strong>
     </div>
-</div>
-<!--End of the About section-->
-<!--====================================--> 
+    <!--End of Video text--------------------->
 
-<!--GitHub section-->
+    <!--Slideshow section added -------------->
+    <div id="Slideshow">
+      <div id="Slideshow_Background">
+        <div id="Slideshow_Container">
+          <!-- 1 of 6-->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" src="images/1-mountain.jpg" alt="">
+            <div class="text">I'm available to assist you on your project!</div>
+          </div>
+          <!-- 2 of 6-->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" src="images/2-JS-HTML-CSS.jpg" alt="">
+            <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript, SQL, Python, C# and more</div>
+          </div>
+          <!-- 3 of 6-->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" src="images/3-Python.jpg" alt="">
+            <div class="text">the popular programming language Python,</div>
+          </div>
+          <!-- 4 of 6-->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" src="images/4-SQL.jpg" alt="">
+            <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+          </div>
+          <!-- 5 of 6-->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" src="images/5-C-Sharp.jpg" alt="">
+            <div class="text">back end development, databases and SQL.</div>
+          </div>
+          <!-- 6 of 6-->
+          <div class="mySlides fade">
+            <img class="Slideshow_Images" src="images/6-Coding.jpg" alt="">
+            <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
+          </div>
+          <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+    </div>
+    <!--End of Slideshow section added -------------->
+
+    <!--About section----------------------->
+    <div class="Row" id="About">
+      <div class="Column_2">
+        <img src="images/Gil-Furman.jpg" alt="Laptop">
+      </div>
+      <div class="Column_1">
+          <h1>About</h1>
+          <p>
+              I am a software developer who loves to code!
+              <br>
+              <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, C# and more. 
+              <br>
+              <br>I am a full-stack developer and would love to work with you on your project. <a onclick="openForm()" class="contact">Contact</a> me below!
+          </p>
+      </div>
+    </div>
+    <!--End of About section----------------------->
+
+    <!--GitHub section----------------------------->
     <div class="Row" id="GitHub">
-        <!--Left column-->
-        <div class="Column_1">
-            <h1>GitHub</h1>
-            <p>
-                You can view my coding projects on my GitHub profile here:
-                <br>
-                <p class="center"><a href="https://github.com/FurmanG" target="_blank">My Github Account</a></p>
-            </p>
-        </div>
-        <!--Right column-->
-        <div class="Column_2">
-            <a href="https://github.com/FurmanG" target="_blank"><img src="images/github-1.png" alt="GitHub Logo"></a>
-        </div>
+      <div class="Column_1">
+        <h1>GitHun</h1>
+        <p>You can view my coding projects on my GitHub profile here:
+          <br>
+          <p class="center"><a href="https://github.com/FurmanG" target="_blank">https://github.com/FurmanG</a></p>
+        </p>
+      </div>
+      <div class="Column_2">
+        <a href="https://github.com/FurmanG" target="_blank"><img src="images/7-github.jpg"></a>
+      </div>
     </div>
-<!-- End of GitHub section-->
-<!--====================================--> 
-<!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="images/contact-us.jpg" alt="Contact_Image">
-            </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
-            </div>
-        </div>
+    <!--End of GitHub section---------------------->
 
-        <!--Footer section-->
-        <footer>
-            <p>
-                <p class="center">&copy Gil Fuman, <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Yet to come.</a></p>
-                <br>
-            </p>
-        </footer>
+    <!--Contact form---------------------------------->
+    <div id="Contact">
+      <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+      <div class="form-popup" id="myForm" ondblclick="closeForm()">
+        <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> 
+            <h1>Contact</h1>
+            <label for="name"><b>Name</b></label>
+              <input type="text" placeholder="Type your name here" name="name" required>
+            <label for="phone"><b>Phone</b></label>
+              <input type="text" placeholder="Type your phone number here" name="phone">
+            <label for="email"><b>Email</b></label>		
+              <input type="text" placeholder="Type your email address here" name="email" required>
+            <label for="message"><b>Message</b></label>
+              <input type="text" placeholder="Type your message here" name="message">
+
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+        </form>
+      </div>
+    </div>
+    <!--End of Contact form---------------------------->
 
 
-    </body>
+    <!--Footer section ------------------------------>
+    <footer>
+      <p class="center">" Gil Furman, "<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Yet to come</a></p><br>
+    </footer>
+    <!--End of Footer section ------------------------------>
+
+    <script src="JS/main.js"></script>
+  </body>
+<!--End of Body----------------------->
+
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh'},{'server':'a2plcpnl0622'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+
 </html>
