@@ -37,7 +37,7 @@ h1 {
 /* Heading 1 element hover effect */
 h1:hover {
   filter: grayscale(5%); 
-  transform: scale(1.1); 
+  transform: scale(1.08); 
   transition: transform 1s; 
 }
 
@@ -66,12 +66,14 @@ transform: scale(1.01);
 /* Center class - this applies to all centered text */
 .center {
   text-align: center; 
+  height: 100vh;
+
 }
 
 /* Center align elements hover effect - This only affects the quote, github link, and footer */
 .center:hover {
   transition: transform 2s; 
-  transform: scale(1.1); 
+  transform: scale(1.08); 
 }
 
 /* Anchor elements */
